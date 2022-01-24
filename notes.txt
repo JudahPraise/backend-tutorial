@@ -1,0 +1,37 @@
+Multi auth
+For more detailed explanation visit: https://youtu.be/iKRLrJXNN4M 🎉
+Bitfumes
+QuiroLab
+Traversy
+
+1. Create admin migration
+    - Copy users table and change its name based on your second users
+2. Create model
+    - Copy the User model and change its name based on your second users
+3. Add admin guard on line 38
+    - modify auth.php in config/auth.php
+    - Add admin guard
+    - Specify user Auth::guard('admin')->check($credentials);
+    - Web browser base authentication using session
+    - Api api based authentication using token
+4. Add provider for admin guard
+    - Provider tells how to talk with the database and what database
+        - Eloqouent
+        - Database
+5. Set up password resets for admin
+    - Copy the users password resets and change its name and provider
+6. Specify the guard in Admin model 
+7. Create a controller for admin dashboard and specify its middlewear
+8. Create a route for admin dashboard
+9. Create a view for admin dashboard
+10. Create Log in function for admin first check the log in routs via php artisan route:list 
+11. Create the login view for admin login
+12. Create your route for admin showLogInForm and login function
+
+Install Auth
+composer require laravel/ui:^2.4
+php artisan ui bootstrap --auth
+npm install
+npm run dev
+
+    
